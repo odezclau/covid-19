@@ -5,10 +5,10 @@ regions.addEventListener('change', function () {
 });
 async function fetchCOVIDdata(region) {
   try {
-    const response = await fetch(`/news/${region}`);
+    const response = await fetch(`https://covid-19-info.onrender.com/news/${region}`);
     const newsData = await response.json();
 
-    const response2 = await fetch(`/stats/${region}`);
+    const response2 = await fetch(`https://covid-19-info.onrender.com/stats/${region}`);
     const statsData = await response2.json();
 
     // Display the news articles
