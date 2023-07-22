@@ -11,7 +11,7 @@ async function fetchCOVIDdata(region) {
     const response2 = await fetch(`https://covid-19-info.onrender.com/stats/${region}`);
     const statsData = await response2.json();
 
-    // Display the news articles
+    // vIsualizar (tutorial parte 3 (min 32))
     const newsContainer = document.querySelector('#news-container');
     newsContainer.innerHTML = '';
     let news = newsData.news;
@@ -57,22 +57,19 @@ async function fetchCOVIDdata(region) {
 function getDate(timestamp) {
   const date = new Date(timestamp);
 
-  // Options for formatting the date
+  // Formateo de la fecha
   const options = { day: 'numeric', month: 'short', year: 'numeric' };
-
-  // Convert the date to the desired format
-  const formattedDate = date.toLocaleDateString('en-US', options);
+  const formattedDate = date.toLocaleDateString('en-US', options); //probar on otras opciones hehe
 
   return formattedDate;
 }
 
 function chartCreate(totalConfirmed, newConfirmed, totalDeaths, newDeaths, totalRecovered, newRecovered) {
-  // HTML element to render the chart
   const chartElement = document.getElementById('myChart');
-  // Check if a chart already exists
+  // ver si el proyecto ya esta
   const existingChart = Chart.getChart(chartElement);
 
-  // Destroy the existing chart if it exists
+  // Esto es para eliminar la info 
   if (existingChart) {
     existingChart.destroy();
   }
@@ -89,7 +86,7 @@ function chartCreate(totalConfirmed, newConfirmed, totalDeaths, newDeaths, total
     }]
   };
 
-  // Chart configuration
+  // Configurar el chart (tutorial del tom, esta rebueno)
   const config = {
     type: 'bar',
     data: data,
@@ -106,7 +103,7 @@ function chartCreate(totalConfirmed, newConfirmed, totalDeaths, newDeaths, total
     },
   };
 
-  // Create the chart
+//estaria creado
   const myChart = new Chart(chartElement, config);
 
 }
