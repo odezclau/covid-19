@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid 19</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <main>
+      <div class="top">
+        <div class="img">
+          <img src="./img/covid19.png" alt="Covid">
+          <h2>COVID 19 INFO</h2>
+        </div>
+        <div class="dropdown">
+          <select id="regions">
+            <option value="" selected disabled>Selecciona un pais</option>
+            <option value="global">Mundial</option>
+            <option value="US">Estados Unidos</option>
+            <option value="CA">Canada</option>
+            <option value="MX">Mexico</option>
+            <option value="AR">Argentina</option>
+            <option value="BR">Brazil</option>
+            <option value="CL">Chile</option>
+            <option value="CO">Colombia</option>
+            <option value="EC">Ecuador</option>
+            <option value="PE">Peru</option>
+            <option value="VE">Venezuela</option>
+          </select>
+        </div>
+        <h3 class="region">Region: <span id="region">Sin seleccion aun</span></h3>
+      </div>
+      <div class="container">
+        <div class="left-column" id="news-container">
+          <p>Seleccion a un pais para mostrar la info.</p>
+        </div>
+        <div class="right-column">
+          <canvas id="myChart">
+            <p>Selecciona a un pais para mostrar la info.</p>
+          </canvas>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+  <script>
+
+  </script>
+
+</html>

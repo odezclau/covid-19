@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main{
+    padding: 50px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    color: dodgerblue;
+}
+
+.dropdown {
+    margin-bottom: 20px;
+}
+
+.dropdown select {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.dropdown select option {
+    font-size: 14px;
+}
+
+.container {
+    display: flex;
+}
+
+.left-column {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.right-column {
+    width: 50%;
+    padding-left: 20px;
+}
+
+.news-card {
+    margin-bottom: 20px;
+}
+
+.news-card img {
+    width: 100%;
+    height: auto;
+}
+
+.news-card h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.news-card p {
+    margin-bottom: 5px;
+}
+
+.metadata {
+    color: #888;
+    font-size: 12px;
+}
+
+.metadata a {
+    color: #888;
+    text-decoration: none;
+}
+
+/* Rest of the CSS code remains the same as before */
+
+.news-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.news-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.news-card h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.news-card p {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.metadata {
+    color: #888;
+    font-size: 12px;
+}
+
+.metadata a {
+    color: #888;
+    text-decoration: none;
+}
+
+.top{
+    text-align: center;
+    margin: 0 auto 50px;
+    width: 70%;
+}
+.publisher a{
+    color: brown;
+}
+.error{
+    text-align: center;
+    color: darkred;
+}
+.region{
+    font-size: 26px;
+}
+
+.region span{
+    color: brown;
+}
+
+.top h2{
+    font-size: 30px;
+    color: dodgerblue;
+    font-weight: 900;
+    padding: 20px 0;
+    text-shadow: 0 5px 5px #c0c0c0;
+}
+
+.topic{
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #c0c0c0;
+    margin-top: 5px;
+    font-size: 12px;
+}
